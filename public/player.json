@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "playerName": "Shakib Al Hasan",
+    "playerImage": "https://i.ibb.co.com/gMf42z7K/sakib.jpg",
+    "country": "Bangladesh",
+    "rating": 9.8,
+    "price": 12000000,
+    "role": "All-Rounder",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Slow Left-Arm Orthodox"
+  },
+  {
+    "id": 2,
+    "playerName": "Liton Das",
+    "playerImage": "https://i.ibb.co.com/rGzSRVfJ/litonda.webp",
+    "country": "Bangladesh",
+    "rating": 9.5,
+    "price": 11000000,
+    "role": "Wicket-Keeper Batter",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Medium"
+  },
+  {
+    "id": 3,
+    "playerName": "Mustafizur Rahman",
+    "playerImage": "https://i.ibb.co.com/XkzCL8rT/fizz.jpg",
+    "country": "Bangladesh",
+    "rating": 9.3,
+    "price": 10000000,
+    "role": "Bowler",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Left-Arm Fast Medium"
+  },
+  {
+    "id": 4,
+    "playerName": "Taskin Ahmed",
+    "playerImage": "https://placehold.co/400x500/png?text=Taskin+Ahmed",
+    "country": "Bangladesh",
+    "rating": 9.1,
+    "price": 9500000,
+    "role": "Bowler",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Fast"
+  },
+  {
+    "id": 5,
+    "playerName": "Mehidy Hasan Miraz",
+    "playerImage": "https://placehold.co/400x500/png?text=Mehidy+Hasan+Miraz",
+    "country": "Bangladesh",
+    "rating": 9.0,
+    "price": 9000000,
+    "role": "All-Rounder",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off Break"
+  },
+  {
+    "id": 6,
+    "playerName": "Najmul Hossain Shanto",
+    "playerImage": "https://placehold.co/400x500/png?text=Najmul+Hossain+Shanto",
+    "country": "Bangladesh",
+    "rating": 8.7,
+    "price": 8000000,
+    "role": "Batter",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Right-Arm Medium"
+  },
+  {
+    "id": 7,
+    "playerName": "Towhid Hridoy",
+    "playerImage": "https://placehold.co/400x500/png?text=Towhid+Hridoy",
+    "country": "Bangladesh",
+    "rating": 8.5,
+    "price": 7500000,
+    "role": "Batter",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Off Break"
+  },
+  {
+    "id": 8,
+    "playerName": "Rishad Hossain",
+    "playerImage": "https://placehold.co/400x500/png?text=Rishad+Hossain",
+    "country": "Bangladesh",
+    "rating": 8.4,
+    "price": 7000000,
+    "role": "All-Rounder",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Leg Break"
+  },
+  {
+    "id": 9,
+    "playerName": "Tanzid Hasan",
+    "playerImage": "https://placehold.co/400x500/png?text=Tanzid+Hasan",
+    "country": "Bangladesh",
+    "rating": 8.2,
+    "price": 6500000,
+    "role": "Batter",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Right-Arm Medium"
+  },
+  {
+    "id": 10,
+    "playerName": "Afif Hossain",
+    "playerImage": "https://placehold.co/400x500/png?text=Afif+Hossain",
+    "country": "Bangladesh",
+    "rating": 8.0,
+    "price": 6000000,
+    "role": "All-Rounder",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Right-Arm Off Break"
+  },
+  {
+    "id": 11,
+    "playerName": "Soumya Sarkar",
+    "playerImage": "https://placehold.co/400x500/png?text=Soumya+Sarkar",
+    "country": "Bangladesh",
+    "rating": 7.9,
+    "price": 5500000,
+    "role": "All-Rounder",
+    "battingStyle": "Left-Handed",
+    "bowlingStyle": "Right-Arm Medium"
+  },
+  {
+    "id": 12,
+    "playerName": "Hasan Mahmud",
+    "playerImage": "https://placehold.co/400x500/png?text=Hasan+Mahmud",
+    "country": "Bangladesh",
+    "rating": 7.8,
+    "price": 5000000,
+    "role": "Bowler",
+    "battingStyle": "Right-Handed",
+    "bowlingStyle": "Right-Arm Fast Medium"
+  }
+]
