@@ -14,14 +14,28 @@ const playerPromise = fetchPlayer();
 
 function App() {
   const [toggle, setToggle] = useState(true);
-  const [availableBalance, setAvailableBalance] = useState(40000000);
+  const [availableBalance, setAvailableBalance] = useState(60000000);
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  const removePlayer = (player) => {
+    const filteredData = purchasedPlayers.filter(
+      (item) => item.id !== player.id,
+    );
+
+    setPurchasedPlayers(filteredData);
+    setAvailableBalance(availableBalance + player.price);
+  };
 
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
 
-      <div className="w-11/12 mx-auto mt-8     flex justify-between item-center">
-        <h2 className="text-2xl font-bold">Available Players</h2>
+      <div className="w-11/12 mx-auto mt-8 flex justify-between item-center">
+        <h2 className="text-2xl font-bold">
+          {toggle === true
+            ? "Available Players"
+            : `Selected Players (${purchasedPlayers.length}/6)`}
+        </h2>
         <div className="">
           <button
             onClick={() => {
@@ -37,7 +51,7 @@ function App() {
             }}
             className={`py-3 px-6 border-2 border-[#131313]/10 rounded-r-2xl border-l-0 ${toggle === false ? "bg-[#E7FE29]" : ""}`}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchasedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -47,13 +61,18 @@ function App() {
           fallback={<span className="loading loading-dots loading-xl"></span>}
         >
           <AvailablePlayers
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
             availableBalance={availableBalance}
             setAvailableBalance={setAvailableBalance}
             playerPromise={playerPromise}
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
     </>
   );

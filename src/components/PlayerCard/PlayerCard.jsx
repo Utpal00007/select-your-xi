@@ -2,7 +2,13 @@ import { useState } from "react";
 import groupImg from "../../assets/Group.jpg";
 import reportImg from "../../assets/report-1.jpg";
 
-const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
+const PlayerCard = ({
+  player,
+  setAvailableBalance,
+  availableBalance,
+  purchasedPlayers,
+  setPurchasedPlayers,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
 
   const handleSelected = (playerData) => {
@@ -10,6 +16,7 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
     if (availableBalance < playerPrice) return alert("Insufficient Balance");
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerData.price);
+    setPurchasedPlayers([...purchasedPlayers, playerData]);
   };
 
   return (
