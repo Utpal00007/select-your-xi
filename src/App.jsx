@@ -4,6 +4,7 @@ import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 const fetchPlayer = async () => {
   const res = await fetch("/player.json");
@@ -14,7 +15,7 @@ const playerPromise = fetchPlayer();
 
 function App() {
   const [toggle, setToggle] = useState(true);
-  const [availableBalance, setAvailableBalance] = useState(60000000);
+  const [availableBalance, setAvailableBalance] = useState(100000000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
   const removePlayer = (player) => {
@@ -30,7 +31,7 @@ function App() {
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
 
-      <div className="w-11/12 mx-auto mt-8 flex justify-between item-center">
+      <div className="w-11/12 mx-auto mt-8 flex justify-between item-center sticky top-0 z-10 bg-white ">
         <h2 className="text-2xl font-bold">
           {toggle === true
             ? "Available Players"
@@ -41,7 +42,7 @@ function App() {
             onClick={() => {
               setToggle(true);
             }}
-            className={`py-3 px-6 border-2 border-[#131313]/10  rounded-l-2xl border-r-0 ${toggle === true ? "bg-[#E7FE29]" : ""}`}
+            className={`py-3 px-6 border-2 border-[#131313]/10  rounded-l-2xl border-r-0 ${toggle === true ? "bg-[#E7FE29]" : ""} `}
           >
             Available{" "}
           </button>
@@ -74,6 +75,8 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
+
+      <ToastContainer />
     </>
   );
 }
