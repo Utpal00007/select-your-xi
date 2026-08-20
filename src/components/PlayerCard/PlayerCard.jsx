@@ -20,10 +20,11 @@ const PlayerCard = ({
     setIsSelected(true);
     setAvailableBalance(availableBalance - playerData.price);
     setPurchasedPlayers([...purchasedPlayers, playerData]);
+    toast("Player Selected Successfully");
   };
 
   return (
-    <div key={player.id} className="shadow-sm rounded-xl p-6   space-y-6">
+    <div key={player.id} className="shadow-sm rounded-xl p-6   space-y-6  ">
       <div>
         {" "}
         <img

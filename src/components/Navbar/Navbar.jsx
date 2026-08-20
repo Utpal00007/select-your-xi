@@ -11,7 +11,23 @@ const Navbar = ({ availableBalance }) => {
             <img className="w-15 h-15" src={navImg} alt="" />
           </a>
         </div>
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 items-center">
+          <div className="">
+            <ul className="flex text-[#131313]/70">
+              <li>
+                <a className="btn btn-ghost ">Home</a>
+              </li>
+              <li>
+                <a className="btn btn-ghost">Fixture</a>
+              </li>
+              <li>
+                <a className="btn btn-ghost">Teams</a>
+              </li>
+              <li>
+                <a className="btn btn-ghost">Schedules</a>
+              </li>
+            </ul>
+          </div>
           <span>{availableBalance}</span>
           <span>Coin</span>
           <img src={dollarImg} alt="" />

@@ -5,6 +5,9 @@ import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
 import { ToastContainer } from "react-toastify";
+import Banner from "./components/Banner/Banner";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
 
 const fetchPlayer = async () => {
   const res = await fetch("/player.json");
@@ -30,6 +33,8 @@ function App() {
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
+
+      <Banner></Banner>
 
       <div className="w-11/12 mx-auto mt-8 flex justify-between item-center sticky top-0 z-10 bg-white ">
         <h2 className="text-2xl font-bold">
@@ -75,6 +80,10 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
+
+      <Newsletter></Newsletter>
+
+      <Footer></Footer>
 
       <ToastContainer />
     </>
