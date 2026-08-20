@@ -3,7 +3,7 @@ import BtnImg from "../../assets/frame.jpg";
 
 const Newsletter = () => {
   return (
-    <div className="w-11/12 mx-auto rounded-2xl py-8  md:py-8 lg:py-16 ">
+    <div className="relative z-10  w-11/12 mx-auto rounded-2xl py-8  md:py-8 lg:py-16 -mb-58 ">
       <div className="border-2 border-amber-200   rounded-2xl p-2 md:p-4  ">
         <div
           style={{ backgroundImage: `url(${RgbImg})` }}
